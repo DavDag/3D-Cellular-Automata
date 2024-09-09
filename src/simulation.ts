@@ -171,8 +171,8 @@ export class Simulation {
 
     colorRule(cell: SimulationCell, col: vec3) {
         vec3.set(col, 1, 0, 0);
-        // vec3.scale(col, col, (cell.state+1) / (this.rule.initialState+1));
-        vec3.scale(col, col, cell.neighbours / 26.0);
+        vec3.scale(col, col, (cell.state) / (this.rule.initialState));
+        // vec3.scale(col, col, cell.neighbours / 26.0);
         return col;
     }
 
