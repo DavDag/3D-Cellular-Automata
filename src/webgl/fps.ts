@@ -1,24 +1,24 @@
 
 export class FpsCounter {
     
-    private fps: number;
+    public fps: number;
     private frameCount: number;
-    private frameCountTimeMs: number;
+    private frameCountTimeSec: number;
 
     constructor() {
         this.fps = 0;
         this.frameCount = 0;
-        this.frameCountTimeMs = 0;
+        this.frameCountTimeSec = 0;
     }
 
-    tick(dtMs: number) {
+    tick(dtSec: number) {
         this.frameCount++;
-        this.frameCountTimeMs += dtMs;
-        if (this.frameCountTimeMs > 1) {
-            this.fps = this.frameCount / this.frameCountTimeMs;
+        this.frameCountTimeSec += dtSec;
+        if (this.frameCountTimeSec > 1) {
+            this.fps = this.frameCount / this.frameCountTimeSec;
             this.frameCount = 0;
-            this.frameCountTimeMs = 0;
-            console.log(this.fps);
+            this.frameCountTimeSec = 0;
+            //console.log(this.fps);
         }
     }
 
