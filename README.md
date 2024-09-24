@@ -5,6 +5,12 @@
 </a>
 <br>
 
+> [!WARNING]
+> This was an initial poc.
+> The real project is made in C++ and its available [here](https://github.com/DavDag/Cpp-3D-Cellular-Automata)!
+
+<hr>
+
 Publishing an old project I worked on while at university just to play a bit with cellular automata & 3D rendering.
 
 ## Screenshots
